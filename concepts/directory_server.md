@@ -13,6 +13,8 @@ Tree keeps paths. For every path, two things will be saved: (plain-text or encry
 ### Encrypted tree
 Encrypted tree is a recommended feature. It can be disable if user thinks their devices could not afford the performance cost.
 
+The goal of encrypted tree is to prevent attacker visit the detailed paths without permissions.
+
 When this feature on, the paths of the tree must be encrypted by XSalsa20 and Poly1305 MAC (it's default of libsodium's public-key cryptography) with 256 bits key. Profile should keep the private key.
 
 ### How to access files
