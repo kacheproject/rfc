@@ -1,4 +1,4 @@
-# Hello
+# `hello`
 
 Say hello to each other. This message is sent by the "connect"-side.
 
