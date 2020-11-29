@@ -4,7 +4,7 @@ Kache perfer uses ZeroMQ as its network basement. ZeroMQ have bundled with many 
 
 Instead of packet or stream, the basic concepts in tranferring of zeromq is frame. Frame is a atomic element of data. One message can contain one or more frames. The message with two or more frames called multipart message.
 
-ZeroMQ define some patterns of "socket". If you want to known more about ZeroMQ please navigate to [ZeroMQ Guide](zguide.zeromq.org), which is a free complete book about ZeroMQ. This book does not covered many ZeroMQ improvments which are added after the book released, these new features will be described when required. 
+ZeroMQ define some patterns of "socket". If you want to known more about ZeroMQ please navigate to [ZeroMQ Guide](https://zguide.zeromq.org), which is a free complete book about ZeroMQ. This book does not covered many ZeroMQ improvments which are added after the book released, these new features will be described when required. 
 
 ## How Messages Constructed
 All of messages transfered by ZeroMQ used in kache will have same structure (unless specially described): command, headers and playload.
