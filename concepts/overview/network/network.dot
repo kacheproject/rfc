@@ -1,0 +1,17 @@
+graph {
+    label = "A More Complex Network Showcase";
+    Application1 -- Agent1;
+    Agent1 -- "Directory Server";
+    "Storage Server" -- Agent1;
+    "Storage Server" -- "Directory Server";
+    Application2 -- Agent2;
+    Application3 -- Agent2;
+    Agent2 -- "Storage Server";
+    Agent2 -- "Directory Server";
+    Agent2 -- "Directory Server 2";
+    Agent2 -- "Storage Server 2";
+    "Storage Server 2" -- "Directory Server 2";
+    "Directory Server 2" -- "Storage Server";
+    Agent1 -- "Storage Server 2";
+    "Directory Server" -- "Storage Server 2";
+}
