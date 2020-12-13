@@ -2,8 +2,8 @@
 
 - Overview
 
-- Directory Server
+- [Directory Server](./directory_server.md)
 - Storage Server
 - Application
-- Vault
-- Profile
+- [Vault](./vault.md)
+- [Profile](./profile.md)
