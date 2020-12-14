@@ -36,3 +36,7 @@ The user's private key is saved in `userlets` as `signing_key`.
 
 ## Synchronizing between Devices
 Kache uses standard method to synchronize profile between devices. For every profile, a vault call "profile+[id]" must be created and added to the profile, for example `profile+39db07ce-d436-4e0e-a88c-bfeb8950d9f3`.
+
+There will be a "change stack" on every client which require synchronizing. It stores every change since the profile synchronized with any other client. Before one client apply changes on the profile in the vault, it must synchronize the profile from others. Clients should declare the changes on the profile on the directory server after change stack applied. The stack will be cleaned after the changes applied successfully.
+
+Besides the profile in vault, the implementation can work on a copy which is appiled the changes instantly for simple code.
