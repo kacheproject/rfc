@@ -12,6 +12,11 @@ Vaults is used to isolate application's saving. Any file in kache must saved in 
 ## Permission Key
 Permission key is a long-term string used for identify if a user can access the tree on directory server.
 
+## Shared Vaults
+Vault is the basic concept of sharing in kache. User could share the tree and content key pairs with others. Any vault like this called shared vaults.
+
+In real life, the vaults which user is using should not be shared to any other. The better way is to create a new vault and to share the new vault.
+
 ## Charaters about Vaults
 ### On Storage Servers
 Storage servers save the files indexed by the hashes of path.
