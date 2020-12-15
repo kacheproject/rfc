@@ -23,4 +23,4 @@ Directory server store whole the trees of all vaults. As you request by the path
 ## Profiles
 Only when user request to store profile database to download it on another device, directory server will accept the random file and expose to any client which have specific string for a limited time.
 
-Directory server still saves signing public key and unique id for profile to identify the user has permission.
+Directory server still saves signing public key and unique id for profile to identify if the user has permission.
