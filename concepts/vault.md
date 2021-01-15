@@ -1,28 +1,17 @@
 # Vault
 
-Vault is a virtual root for any case.
+Vault is a key-value database which presents a isolation.
 
-- It's identified by unique id.
-- Every vault have its own key pair for encryption.
-- Encryption is done by application.
-- Any vault is not linked to profile.
+- Identified by unique identity
+- Encrypted by default
+- Doesn't be linked to profile
+- Being synchronised across devices
 
-Vaults is used to isolate application's saving. Any file in kache must saved in one or more vault.
-
-## Permission Key
-Permission key is a long-term string used for identify if a user can access the tree on directory server.
-
-## Shared Vaults
-Vault is the basic concept of sharing in kache. User could share the tree and content key pairs with others. Any vault like this called shared vaults.
-
-In real life, the vaults which user is using should not be shared to any other. The better way is to create a new vault and to share the new vault.
-
-## Charaters about Vaults
-### On Storage Servers
-Storage servers save the files indexed by the hashes of path.
-
-### On Directory Servers
-Directory server keeps the whole tree of vault with optionally encrypted.
-
-### On Clients
-Clients (including storage servers) use a rsync-like protocol to exchange files. Clients are responsible to keep the tree in sync with directory server.
+## Storage Vault
+Storage vault is a standard format to save files in a genernal style.
+It requires these fields:
+- `tree` is the id of the linked resource tree
+- `pool` is the resource pool id for files
+- `tree_key` and `tree_key_pub`, the pair of encryption key for tree
+- `file_key` and `file_key_pub`, the pair of encryption key for file contents
+- `tree_hash_salt`, the salt used to salt the hash in tree
