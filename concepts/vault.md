@@ -10,7 +10,7 @@ Vault is a key-value database which presents a isolation.
 ## Common Fields
 All vaults must contain these fields:
 - `name` is the name of vault
-- `version` is the version of the vault, current is integar `202101`
+- `version` is the version of the vault, current is string `1`
 
 ## Storage Vault
 Storage vault is a standard format to save files in a genernal style.
