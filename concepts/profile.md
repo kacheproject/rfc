@@ -4,10 +4,15 @@ Profile is a small sqlite3 database keeps:
 
 - Basic Infomation
 - Signing keys
-- Vault details (id, name, tree_decryption_key, tree_encryption_key, encryption_key, decryption_key, access_key, owner, directory_server)
+- Vaults
 
 ## Userlets and Systemlets
 Profiles have tables `userlets` and `systemlets`, which are under key-vaule structure. The `systemlets` table keeps infomation about the database, for example, `version`. The `userlets` store user infomation.
+These tables have two columns: `key` with type `TEXT` and `value` with type `TEXT`. They could be created like that in sqlite3:
+````sql
+CREATE TABLE IF NOT EXISTS userlet (key TEXT PRIMARY KEY, value TEXT);
+CREATE TABLE IF NOT EXISTS systemlet (key TEXT PRIMARY KEY, value TEXT);
+````
 
 ## Basic Infomation
 These keys must be presented in `userlet`:
@@ -21,14 +26,10 @@ These keys must be presented in `systemlet`:
 
 ## Vaults
 Profile saves all vaults user can access, they are saved in `vaults`:
-- id
-- owner_id
-- content_pub
-- content_pri
-- tree_pub
-- tree_pri
-- directory_server
-- salt
+- `id` the id of vault
+- `owner_id` the id of the owner
+- `key` the private key for the vault
+- `home_server` the directory server bounded to vault
 
 ## Signing
 Signing is the only way in kache to check the profile's identity. Ed25519 system is being used.
