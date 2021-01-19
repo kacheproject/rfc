@@ -27,6 +27,7 @@ These keys must be presented in `systemlet`:
 ## Vaults
 Profile saves all vaults user can access, they are saved in `vaults`:
 - `id` the id of vault
+- `informal_name` the informal name for this vault (Note: the actual name is in the vault)
 - `owner_id` the id of the owner
 - `key` the private key for the vault
 - `home_server` the directory server bounded to vault
