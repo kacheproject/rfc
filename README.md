@@ -1,11 +1,9 @@
 # Kache RFC
 
-This repository keeps documents for the kache project.
+This repository keeps RFCs for the kache project.
 
-| Version | Status      |
-|---------|-------------|
-| 1       | Developing  |
-| 2       | Non-started |
+- `rfc0` Developing: The rope library: a library for reliable application-level P2P transport.
+- `rfc1` Developing: Kache: P2P application engine
 
 ## Versions
 
@@ -13,7 +11,7 @@ Kache RFC provides version number to give instant picture of supported features 
 
 All version numbers in real cases should be provided as characters rather than number (integer or float) for cross-platform consistency.
 
-RFC is in one of 5 status:
+RFC may have one of 5 status:
 
 - `Non-started` the version number just a number
 - `Developing` this version of RFC is under developing

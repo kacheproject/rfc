@@ -17,6 +17,6 @@ Storage vault is a standard format to save files in a genernal style.
 It requires these fields:
 - `tree` is the id of the linked resource tree
 - `pool` is the file pool id for files
-- `tree_key` and `tree_key_pub`, the pair of encryption key for tree
-- `file_key` and `file_key_pub`, the pair of encryption key for file contents
+- `tree_key`, the pair of encryption key for tree
+- `file_key`, the pair of encryption key for file contents
 - `tree_hash_salt`, the salt used to salt the hash in tree
