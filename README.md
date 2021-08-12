@@ -2,25 +2,23 @@
 
 This repository keeps RFCs for the kache project.
 
-- `rfc0` Developing: The rope library: a library for reliable application-level P2P transport.
-- `rfc1` Developing: Kache: P2P application engine
+| Title                               | Link                                           | Status     |
+|-------------------------------------|------------------------------------------------|------------|
+| _RFC0: Rope Wire Transfer Protocol_ | [RFC0](0_Rope_Wire_Transfer_Protocol/index.md) | Working Draft |
 
-## Versions
 
-Kache RFC provides version number to give instant picture of supported features for protocol recogonization.
 
-All version numbers in real cases should be provided as characters rather than number (integer or float) for cross-platform consistency.
+## Status
 
-RFC may have one of 5 status:
+RFC may is in one of 4 status:
 
-- `Non-started` the version number just a number
-- `Developing` this version of RFC is under developing
-- `Complete` it's a complete RFC, but it may have something could improved
-- `Freeze` the RFC is stable and won't be changed unless security problem found
-- `Deprecated` avoid using of this version
+- `Working Draft` this RFC is under disscussion
+- `Complete Draft` it's a complete RFC, but still accept advice
+- `Frozen` the RFC is stable
+- `Deprecated` avoid using this RFC
 
 ## Contribution
-Any kinds of contribution are welcome: typo fix, detailed explain, ...
+Any kind of contribution are welcome: typo fix, detailed explain, ...
 
 ## Discussions and Questiones
 Go to "Discussion" page of this project.

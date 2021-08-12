@@ -1,7 +1,0 @@
-graph {
-    label = "A Simple Network Showcase";
-    Application1 -- Agent1;
-    Agent1 -- "Directory Server";
-    "Storage Server" -- Agent1;
-    "Storage Server" -- "Directory Server";
-}
