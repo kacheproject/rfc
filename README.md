@@ -17,7 +17,7 @@ RFC may is in one of 4 status:
 - `Frozen` the RFC is stable
 - `Deprecated` avoid using this RFC
 
-## Contribution
+## Contributing
 Any kind of contribution are welcome: typo fix, detailed explain, ...
 
 ## Discussions and Questiones
