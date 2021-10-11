@@ -5,7 +5,7 @@ This repository keeps RFCs for the kache project.
 | Title                               | Link                                           | Status     |
 |-------------------------------------|------------------------------------------------|------------|
 | _RFC0: Rope Wire Transfer Protocol_ | [RFC0](0_Rope_Wire_Transfer_Protocol/index.md) | Working Draft |
-| _RFC1: Kache_ | [RFC1](1_Rope_Protocol/index.md) | Working Draft |
+| _RFC1: Kache_ | [RFC1](1_Kache/index.md) | Working Draft |
 
 
 
