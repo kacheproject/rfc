@@ -1,0 +1,7 @@
+graph G {
+    label = "A Kache Network Without Home Server";
+
+    Device0 -- Device1;
+
+    HomeServer[label="Home Server (offline)"];
+}

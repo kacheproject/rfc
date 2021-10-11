@@ -1,0 +1,13 @@
+graph G {
+    label = "Fediverse Classic Architecture";
+
+    ServerA, ServerB, ServerC;
+    Client0, Client1, Client2, Client3, Client4, Client5;
+
+    ServerA -- ServerB;
+    ServerB -- ServerC;
+    ServerC -- ServerA;
+    ServerA -- {Client0, Client1};
+    ServerB -- {Client2, Client3};
+    ServerC -- {Client4, Client5};
+}
