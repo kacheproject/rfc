@@ -27,8 +27,28 @@ To simplify network programming, kache integrates I2P to provide network functio
   - Issues
 - Relays
 - Word Defintions
-- Reference Reading
+- Further Readings
 - Authors
 - License
 
 ## Kache Network
+
+Kache is about connecting different processes across devices. A kache network includes all inter-connecting processes using kache.
+
+````
++---------------------+
+|                     |
++-------+ Application +
+| Kache |             |
++-------+-------------+
+|       I2P           |
++---------------------+
+````
+
+Kache and third-party applications both works on I2P, which provides network accessing from consistent addresses even in mobile environment. Application using kache by OS-agent or kache library to access kache functions. I2P is integrated to kache library for full control.
+
+### Basic Concepts
+
+Any kache network have one home server and at least one device.
+
+![Image: one home server, device zero and device one are connected](./basic_concepts.svg)

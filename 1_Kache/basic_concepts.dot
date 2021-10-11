@@ -1,0 +1,7 @@
+graph G {
+    label="A Basic Kache Netowrk";
+
+    HomeServer [label="Home Server"];
+    HomeServer -- {Device0 Device1};
+    Device0 -- Device1;
+}
