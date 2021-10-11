@@ -9,7 +9,7 @@
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 279)">
 <title>G</title>
 <polygon fill="white" stroke="transparent" points="-4,4 -4,-279 383.49,-279 383.49,4 -4,4"/>
-<text text-anchor="middle" x="189.75" y="-7.8" font-family="Times-Roman" font-size="14.00">Fediverse Classic Architure</text>
+<text text-anchor="middle" x="189.75" y="-7.8" font-family="Times-Roman" font-size="14.00">Fediverse Classic Architecture</text>
 <!-- ServerA -->
 <g id="node1" class="node">
 <title>ServerA</title>
