@@ -1,5 +1,5 @@
 graph G {
-    label="A Basic Kache Netowrk";
+    label="A Basic Kache Network";
 
     HomeServer [label="Home Server"];
     HomeServer -- {Device0 Device1};

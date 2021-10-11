@@ -9,7 +9,7 @@
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 207)">
 <title>G</title>
 <polygon fill="white" stroke="transparent" points="-4,4 -4,-207 180,-207 180,4 -4,4"/>
-<text text-anchor="middle" x="88" y="-7.8" font-family="Times-Roman" font-size="14.00">A Basic Kache Netowrk</text>
+<text text-anchor="middle" x="88" y="-7.8" font-family="Times-Roman" font-size="14.00">A Basic Kache Network</text>
 <!-- HomeServer -->
 <g id="node1" class="node">
 <title>HomeServer</title>
