@@ -57,7 +57,7 @@ Except stated otherwise, any kache functionality must be available whether the h
 
 ![Image: home server is offline. Device zero and device one are connected each other](./basic_concepts_without_homesvr.svg)
 
-Such architecture works like "fediverse" but not exactly is, could be called "weak-fediverse", which is able to continue its functionality during the server on network is down until every device is done.
+Such architecture works like "fediverse" but not exactly is, could be called "weak-fediverse", which can continue its functionality during the server on the network is down.
 
 ![Image: Server A, B, C inter-connected. Clients are connected to servers.](./fedi_arch.svg)
 
