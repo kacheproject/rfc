@@ -18,8 +18,8 @@ It aims to provide these basic concepts:
   - Basic Concepts
   - Working over I2P
 - Vaults
-  - File System
   - EventPub
+  - File System
 - Kache Court
   - Working Process
   - Issues
@@ -65,4 +65,28 @@ Such architecture works like "fediverse" but not exactly is, could be called "we
 
 Kache network is being built over the I2P network.
 
-A Home server may be connected through a public network rather than the I2P network for limited functions. These functions are network join, signing in, information exchanging between two home servers or other implicitly stated.
+A Home server may be connected through a public network rather than the I2P network for limited functions. These functions are network join, signing in, information exchanging between two home servers and other implicitly stated.
+
+## Vaults
+
+Vault is the key concept in kache's application interface. A vault is unique with a 64-bit identity of a file system or events. The identity is a KSSID (Kache Simple & Short IDentity).
+
+### EventPub
+
+EventPub is a reliable message delivery middleware.
+
+#### Concepts
+
+For each vault, each device has an "inbox". The inbox is identified by vault's and device's identity, which is a 128-bit identity combined. An inbox can send or receive messages to or from other inboxes.
+
+Besides identity, a message has a topic. The topic can be used to filter specific messages.
+
+#### Transferring layout
+
+EventPub does zero restrictions on a message's body. The below layout is for messages in transport.
+
+````
+| Sender (128 bits) | Destination (128 bits) | Topic (8 bits + N bytes) | BodyLenType (2 bit) | BodyLen (8, 16, 32 or 64 bits) | Body (N bytes) |
+````
+
+EventPub must support broadcasting. To broadcast a message, set the latter 64 bits in destination, the identity of the device, to zero.
