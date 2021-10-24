@@ -83,7 +83,7 @@ The control code helps remote identify what this message used for.
 
 ### Control codes
 
-Control code is a unsigned 8-bit integer.
+Control code is an unsigned 8-bit integer.
 
 - DATA `0`
 - SETOPT `1`
@@ -166,6 +166,8 @@ user_message...
 The `user_message` should be returned to user.
 
 ### Sending or Receiving Message
+
+Messages will be packed and encrypted before they can be sent. The encrypting algorithm may differ across modes.
 
 ## Seal Mode
 
