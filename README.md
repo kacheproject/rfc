@@ -6,7 +6,6 @@ This repository keeps RFCs for the Kache project.
 |-------------------------------------|--------------------------|---------------|
 | _RFC0: Rope Protocol, version 6_    | [RFC0](0_RPv6/index.md)  | Working Draft |
 | _RFC1: Kache_                       | [RFC1](1_Kache/index.md) | Working Draft |
-| _RFC2: Rope Peer Discovery Protocol_ | [RFC2](2_RPDP/index.md)  | Working Draft |
 
 
 
